@@ -381,7 +381,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       "template": "./src\\index.html",
       "filename": "./index.html",
-      "hash": false,
+      "hash": true,
       "inject": true,
       "compile": true,
       "favicon": false,
@@ -390,7 +390,7 @@ module.exports = {
       "showErrors": true,
       "chunks": "all",
       "excludeChunks": [],
-      "title": "Webpack App",
+      "title": "NgCliTest",
       "xhtml": true,
       "chunksSortMode": function sort(left, right) {
         let leftIndex = entryPoints.indexOf(left.names[0]);
