@@ -81,13 +81,13 @@ module.exports = env => {
     },
     "entry": {
       "main": [
-        "./src\\main.ts"
+        "./src/main.ts"
       ],
       "polyfills": [
-        "./src\\polyfills.ts"
+        "./src/polyfills.ts"
       ],
       "styles": [
-        "./src\\styles.scss"
+        "./src/styles.scss"
       ]
     },
     "output": {
@@ -119,7 +119,7 @@ module.exports = env => {
         },
         {
           "exclude": [
-            path.join(process.cwd(), "src\\styles.scss")
+            path.join(process.cwd(), "src/styles.scss")
           ],
           "test": /\.css$/,
           "use": [
@@ -142,7 +142,7 @@ module.exports = env => {
         },
         {
           "exclude": [
-            path.join(process.cwd(), "src\\styles.scss")
+            path.join(process.cwd(), "src/styles.scss")
           ],
           "test": /\.scss$|\.sass$/,
           "use": [
@@ -173,7 +173,7 @@ module.exports = env => {
         },
         {
           "exclude": [
-            path.join(process.cwd(), "src\\styles.scss")
+            path.join(process.cwd(), "src/styles.scss")
           ],
           "test": /\.less$/,
           "use": [
@@ -202,7 +202,7 @@ module.exports = env => {
         },
         {
           "exclude": [
-            path.join(process.cwd(), "src\\styles.scss")
+            path.join(process.cwd(), "src/styles.scss")
           ],
           "test": /\.styl$/,
           "use": [
@@ -232,7 +232,7 @@ module.exports = env => {
         },
         {
           "include": [
-            path.join(process.cwd(), "src\\styles.scss")
+            path.join(process.cwd(), "src/styles.scss")
           ],
           "test": /\.css$/,
           "use": [
@@ -255,7 +255,7 @@ module.exports = env => {
         },
         {
           "include": [
-            path.join(process.cwd(), "src\\styles.scss")
+            path.join(process.cwd(), "src/styles.scss")
           ],
           "test": /\.scss$|\.sass$/,
           "use": [
@@ -286,7 +286,7 @@ module.exports = env => {
         },
         {
           "include": [
-            path.join(process.cwd(), "src\\styles.scss")
+            path.join(process.cwd(), "src/styles.scss")
           ],
           "test": /\.less$/,
           "use": [
@@ -315,7 +315,7 @@ module.exports = env => {
         },
         {
           "include": [
-            path.join(process.cwd(), "src\\styles.scss")
+            path.join(process.cwd(), "src/styles.scss")
           ],
           "test": /\.styl$/,
           "use": [
@@ -447,10 +447,10 @@ module.exports = env => {
         "mainPath": "main.ts",
         "replaceExport": false,
         "hostReplacementPaths": {
-          "environments\\environment.ts": "environments\\environment.ts"
+          "environments/environment.ts": "environments/environment.ts"
         },
         "exclude": [],
-        "tsConfigPath": "src\\tsconfig.app.json",
+        "tsConfigPath": "src/tsconfig.app.json",
         "skipCodeGeneration": true
       })
     ],
