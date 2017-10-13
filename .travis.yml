@@ -23,4 +23,5 @@ script:
 
 after_success:
   - zip dist.zip dist
+  - echo $BUILD_VERSION.$TRAVIS_BUILD_NUMBER
   - mv dist.zip dist-$BUILD_VERSION.$TRAVIS_BUILD_NUMBER.zip
