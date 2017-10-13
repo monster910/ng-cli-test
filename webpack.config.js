@@ -60,6 +60,9 @@ const postcssPlugins = function () {
 
 
 module.exports = env => {
+  if (!env) {
+    env = {};
+  }
   console.log('Building the '+ env.BUILD_VERSION +' application');
   return {
     "resolve": {
