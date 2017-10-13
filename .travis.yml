@@ -22,4 +22,5 @@ script:
   - npm run build -- --env.BUILD_VERSION=$BUILD_VERSION.$TRAVIS_BUILD_NUMBER
 
 after_success:
-  - zip "dist-$BUILD_VERSION.$TRAVIS_BUILD_NUMBER.zip" dist
+  - zip dist.zip dist
+  - mv dist.zip dist-$BUILD_VERSION.$TRAVIS_BUILD_NUMBER.zip
